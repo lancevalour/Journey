@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_place_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2CD5E"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/my_place_title_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#000000"
+        android:gravity="left|top"
+        android:text="title"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/my_place_description_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_place_title_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="left|top"
+        android:textColor="#000000"
+        android:text="descriptionasf dafsfas  asdfsasd assfas afadsfa fgdsgsdfgdfg"
+        android:textSize="22sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/my_place_horizontalScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/my_place_description_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:background="#F7EAC0"
+        android:scrollbarSize="1dp"
+        android:scrollbarThumbHorizontal="@drawable/scroll_bar" >
+
+        <LinearLayout
+            android:id="@+id/my_place_horizontalScrollView_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
